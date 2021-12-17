@@ -4,8 +4,7 @@ puts "最初はぐー。。。じゃんけん。。。。"
 def janken 
   puts "[0]:グー\n[1]:チョキ\n[2]:パー"
   player_hand = gets.to_i
-  # program_hand = rand(3)
-  program_hand = 0
+  program_hand = rand(3)
   
   jankens = ["グー", "チョキ", "パー"]
   puts "あなたの手:#{jankens[player_hand]}, わたしの手:#{jankens[program_hand]}"
@@ -29,8 +28,8 @@ end
 def hoi_win
   puts "[0]:左\n[1]:上\n[2]:右\n[3]:下"
   player = gets.to_i
-  # program = rand(4)
-  program = 0
+  program = rand(4)
+
   
   hoi_win = ["左", "上", "右","下"]
   puts "あなた:#{hoi_win[player]}, わたしの方向:#{hoi_win[program]}"
@@ -51,9 +50,7 @@ end
 def hoi_lose
   puts "[0]:左\n[1]:上\n[2]:右\n[3]:下"
   player = gets.to_i
-  # program = rand(4)
-  program = 0
-
+  program = rand(4)
 
   hoi_lose = ["左", "上", "右","下"]
   puts "あなた:#{hoi_lose[player]}, わたしの方向:#{hoi_lose[program]}"
