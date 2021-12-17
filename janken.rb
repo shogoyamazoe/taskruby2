@@ -30,7 +30,6 @@ def hoi_win
   player = gets.to_i
   program = rand(4)
 
-  
   hoi_win = ["左", "上", "右","下"]
   puts "あなた:#{hoi_win[player]}, わたしの方向:#{hoi_win[program]}"
     
